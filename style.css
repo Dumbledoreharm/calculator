@@ -1,0 +1,50 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(to right , #ff0055,#00ff7b);
+}
+.cacuator{
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: minmax(80px, auto) repeat(5, 100px);
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}    
+.cacuator > button{
+    cursor: pointer;
+    outline: none;
+    font-size: 2rem;
+    border: 1px solid white;
+    background-color: rgb(98, 163, 216);
+}
+.cacuator>button:hover{
+    background-color: rgba(255, 255, 255, .9);
+}
+.span-two{
+    grid-column: span 2;
+}
+.dspay{
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 13px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.dspay .prevop{
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+.dspay .presop{
+    color: white;
+    font-size: 2.5rem;
+}
